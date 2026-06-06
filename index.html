@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8b7d7">
+  <title>Happy Birthday Palvi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader__ring"></div>
+    <p>Preparing Palvi's surprise...</p>
+  </div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle background music">
+    <span class="music-toggle__icon">♪</span>
+    <span class="music-toggle__text">Music</span>
+  </button>
+
+  <main id="app" class="app">
+    <section id="welcome" class="screen screen--welcome is-active" data-screen="welcome" aria-label="Welcome screen">
+      <div class="dream-bg" aria-hidden="true">
+        <span class="particle particle--one"></span>
+        <span class="particle particle--two"></span>
+        <span class="particle particle--three"></span>
+        <span class="particle particle--four"></span>
+        <span class="particle particle--five"></span>
+        <span class="floating-heart heart--one"></span>
+        <span class="floating-heart heart--two"></span>
+        <span class="floating-heart heart--three"></span>
+        <span class="floating-heart heart--four"></span>
+      </div>
+
+      <div class="hero">
+        <p class="eyebrow">A birthday story</p>
+        <h1>Happy Birthday Palvi <span aria-hidden="true">🎂</span></h1>
+        <p class="hero__subtitle">A small surprise made especially for you</p>
+
+        <button id="giftButton" class="gift" type="button" aria-label="Open the birthday gift">
+          <span class="gift__lid"></span>
+          <span class="gift__bow gift__bow--left"></span>
+          <span class="gift__bow gift__bow--right"></span>
+          <span class="gift__box">
+            <span class="gift__ribbon"></span>
+          </span>
+          <span class="gift__glow"></span>
+        </button>
+      </div>
+    </section>
+
+    <section id="celebration" class="screen screen--celebration" data-screen="celebration" aria-label="Celebration screen">
+      <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+      <div id="fireworkLayer" class="firework-layer" aria-hidden="true"></div>
+      <div class="balloons" aria-hidden="true">
+        <span class="balloon balloon--pink"></span>
+        <span class="balloon balloon--purple"></span>
+        <span class="balloon balloon--gold"></span>
+        <span class="balloon balloon--white"></span>
+        <span class="balloon balloon--rose"></span>
+      </div>
+      <div class="celebration-copy">
+        <p class="eyebrow">Let the magic begin</p>
+        <h2>For Palvi, with a sky full of joy</h2>
+      </div>
+    </section>
+
+    <section id="candles" class="screen screen--candles" data-screen="candles" aria-label="Candle blowing screen">
+      <div class="screen-card candle-card">
+        <p class="eyebrow">Birthday wish</p>
+        <h2>Make a wish and blow the candles</h2>
+
+        <div class="cake cake--wish" aria-label="Birthday cake with lit candles">
+          <div class="cake__plate"></div>
+          <div class="cake__base"></div>
+          <div class="cake__middle"></div>
+          <div class="cake__top"></div>
+          <div class="cake__icing"></div>
+          <div class="candles-row">
+            <span class="candle"><span class="flame"></span></span>
+            <span class="candle"><span class="flame"></span></span>
+            <span class="candle"><span class="flame"></span></span>
+            <span class="candle"><span class="flame"></span></span>
+            <span class="candle"><span class="flame"></span></span>
+          </div>
+          <div id="sparkleLayer" class="sparkle-layer" aria-hidden="true"></div>
+        </div>
+
+        <div class="action-row">
+          <button id="micButton" class="primary-btn" type="button">Allow Microphone</button>
+          <button id="blowButton" class="ghost-btn" type="button">Blow Candles</button>
+        </div>
+        <p id="micStatus" class="status-text">Use the microphone or tap the fallback button.</p>
+      </div>
+    </section>
+
+    <section id="cakeCutting" class="screen screen--cutting" data-screen="cakeCutting" aria-label="Cake cutting screen">
+      <div class="screen-card cutting-card">
+        <p class="eyebrow">Cake time</p>
+        <h2>Cut the birthday cake</h2>
+        <p class="support-text">Drag the knife across the cake or tap it once.</p>
+
+        <div id="cuttingStage" class="cutting-stage">
+          <button id="knife" class="knife" type="button" aria-label="Cut the cake">
+            <span class="knife__blade"></span>
+            <span class="knife__handle"></span>
+          </button>
+          <div id="cutCake" class="cut-cake" aria-label="Realistic pink birthday cake">
+            <div class="cake-piece cake-piece--left">
+              <span class="cake-layer layer--top"></span>
+              <span class="cake-layer layer--cream"></span>
+              <span class="cake-layer layer--sponge"></span>
+              <span class="cake-layer layer--jam"></span>
+            </div>
+            <div class="cake-piece cake-piece--right">
+              <span class="cake-layer layer--top"></span>
+              <span class="cake-layer layer--cream"></span>
+              <span class="cake-layer layer--sponge"></span>
+              <span class="cake-layer layer--jam"></span>
+            </div>
+            <span class="cake-drip cake-drip--one"></span>
+            <span class="cake-drip cake-drip--two"></span>
+            <span class="cake-drip cake-drip--three"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="screen screen--gallery" data-screen="gallery" aria-label="Memory gallery screen">
+      <div class="gallery-hearts" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="gallery-shell">
+        <p class="eyebrow">Little memories</p>
+        <h2>Moments that feel like sunshine</h2>
+
+        <!-- Replace image1.jpg through image5.jpg with Palvi's real photos in this folder. -->
+        <div class="carousel" aria-roledescription="carousel">
+          <button id="prevSlide" class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous memory">‹</button>
+          <div class="carousel__viewport">
+            <figure class="slide is-current">
+              <img src="image1.jpg" alt="Memory with Palvi 1">
+              <figcaption>A smile worth celebrating</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image2.jpg" alt="Memory with Palvi 2">
+              <figcaption>Soft moments, golden memories</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image3.jpg" alt="Memory with Palvi 3">
+              <figcaption>The kind of happiness that stays</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image4.jpg" alt="Memory with Palvi 4">
+              <figcaption>Little memories, big magic</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="image5.jpg" alt="Memory with Palvi 5">
+              <figcaption>Another beautiful chapter</figcaption>
+            </figure>
+          </div>
+          <button id="nextSlide" class="carousel__btn carousel__btn--next" type="button" aria-label="Next memory">›</button>
+        </div>
+
+        <div id="galleryDots" class="gallery-dots" aria-label="Gallery navigation"></div>
+      </div>
+    </section>
+
+    <section id="message" class="screen screen--message" data-screen="message" aria-label="Personal message screen">
+      <div class="message-card">
+        <p class="eyebrow">From the heart</p>
+        <div id="typedMessage" class="typed-message" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="final" class="screen screen--final" data-screen="final" aria-label="Final birthday screen">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="lanterns" aria-hidden="true">
+        <span class="lantern lantern--one"></span>
+        <span class="lantern lantern--two"></span>
+        <span class="lantern lantern--three"></span>
+        <span class="lantern lantern--four"></span>
+      </div>
+      <div id="endlessHearts" class="endless-hearts" aria-hidden="true"></div>
+
+      <div class="final-copy">
+        <p class="eyebrow">One more wish</p>
+        <h2>Once Again, Happy Birthday Palvi <span aria-hidden="true">❤️</span></h2>
+        <p class="final-copy__line">May this year bring you love, calm, laughter, and everything your heart is wishing for.</p>
+        <div class="final-actions">
+          <button id="heartRainButton" class="final-btn final-btn--gold" type="button">Send More Hearts</button>
+          <button id="replayButton" class="final-btn final-btn--soft" type="button">Replay Surprise</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Replace music.wav with your own song file. Sound hook files are optional. -->
+  <audio id="bgMusic" src="music.wav" loop preload="auto"></audio>
+  <audio id="sparkleSound" src="sparkle.wav" preload="auto"></audio>
+  <audio id="popSound" src="pop.wav" preload="auto"></audio>
+  <audio id="chimeSound" src="chime.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
